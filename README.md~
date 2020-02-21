@@ -15,7 +15,7 @@ Different versions of Memcached are located at the github repo [branches](https:
 To create the image `frodenas/memcached`, execute the following command on the `docker-memcached` folder:
 
 ```
-$ docker build -t frodenas/memcached .
+$ docker build -t evan886/memcached .
 ```
 
 ### Run the image
@@ -23,7 +23,8 @@ $ docker build -t frodenas/memcached .
 To run the image and bind to host port 11211:
 
 ```
-$ docker run -d --name memcached -p 11211:11211 frodenas/memcached
+docker run -d --name  mymemcached -p 11211:11211 evan886/ubuntu14-memcached:v1
+
 ```
 
 The first time you run your container, a new user `memcached` with all privileges will be created with a random password.
@@ -57,7 +58,7 @@ $ docker run -d \
     -p 11211:11211 \
     -e MEMCACHED_USERNAME=myusername \
     -e MEMCACHED_PASSWORD=mypassword \
-    frodenas/memcached
+    evan886/memcached
 ```
 
 #### Extra arguments

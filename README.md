@@ -58,7 +58,7 @@ $ docker run -d \
     -p 11211:11211 \
     -e MEMCACHED_USERNAME=myusername \
     -e MEMCACHED_PASSWORD=mypassword \
-    evan886/memcached
+    evan886/ubuntu14-memcached:v1
 ```
 
 #### Extra arguments
@@ -67,7 +67,7 @@ When you run the container, it will start the Memcached without any arguments. I
 just add them to the `run` command:
 
 ```
-$ docker run -d ---name memcached -p 11211:11211 frodenas/memcached -m 128
+$ docker run -d ---name memcached -p 11211:11211 evan886/ubuntu14-memcached:v1  -m 128
 ```
 
 ## Copyright
